@@ -1,0 +1,33 @@
+* Docker - Set up environment with different versions etc.
+* Travis - Try if TravisCI is the way to go
+
+* Get data from API, add to database?
+* yaml-files
+
+* Set operations to test and measure
+* Cython wrapper
+* C++ implentations
+
+* Measure performace and speed etc.
+* Set up unittests
+
+* Set up an API to log the testing to? IF TIME
+
+
+
+THEORY
+* Read C++ Direkt, Python workshop -> compiling vs. interpreted, diff between languages etc.
+* Python docs
+* C++ docs
+
+Ideas for subjects:
+    * Short history?
+    * Why OOP?
+    * Why Python?
+
+
+
+
+DATA ANALYSIS
+* Charts of speed diffs
+* Dip 2.9 -> 3.0?
