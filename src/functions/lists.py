@@ -1,9 +1,8 @@
 import utils
+from utils import Timer
 
-from timer import Timer
 
-
-def comprehension(amount: int) -> float:
+def list_comprehension(amount: int) -> float:
     t = Timer()
 
     with t:
@@ -12,11 +11,11 @@ def comprehension(amount: int) -> float:
     utils.devnull(list_)
     return t.runtime
 
-def append(values: list) -> float:
+def list_append(values: list) -> float:
     t = Timer()
 
     with t:
-        list_ = list()
+        list_ = []
 
         for val in values:
             list_.append(val)
@@ -25,7 +24,7 @@ def append(values: list) -> float:
     return t.runtime
 
 
-def sort(list_: list) -> float:
+def list_sort(list_: list) -> float:
     t = Timer()
 
     with t:
