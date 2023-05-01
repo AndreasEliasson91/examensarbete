@@ -1,0 +1,13 @@
+function,main_dict_length,second_dict_length
+dictionary_comprehension,10000,None
+dictionary_comprehension,500000,None
+dictionary_comprehension,1000000,None
+dictionary_insert,10000,None
+dictionary_insert,500000,None
+dictionary_insert,1000000,None
+dictionary_merge,10000,10000
+dictionary_merge,500000,500000
+dictionary_merge,1000000,1000000
+read_dictionary_values,10000,None
+read_dictionary_values,500000,None
+read_dictionary_values,1000000,None

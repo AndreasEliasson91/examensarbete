@@ -1,55 +1,72 @@
 import getopt
 import logging
-import random
+import platform
 import sys
 from datetime import datetime
 
-from functions import lists as l
-from functions import tuples as t
+from functions import dicts
+from functions import generators
+from functions import iterator
+from functions import lists
+from functions import sets
+from functions import tuples
 
-from functions import generators as g
-from functions import iterator as i
 
-from data import generate_data
-
-VERSION = str(sys.version)
+VERSION = platform.python_version()
 
 logging.basicConfig(
     format='%(levelname)s:%(message)s',
     level=logging.INFO,
-    filename='./doc/logs/log_book.log'
+    filename='c:/code/projects/master-thesis/doc/logs/log_book.log'  # TODO: CHANG THIS
 )
 
 
 # def main(argv: list) -> None:
-#     if len(argv) < 1:
-#         logging.warning(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-#         logging.warning('Not enough parameters')
-#         return
+def main(argv):
+    if len(argv) < 1:
+        logging.warning(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        logging.warning('Couldn\'t run MAIN(). Not enough CL parameters\n')
+        # help_msg = '''ERROR: Missing params to run MAIN(), add any of following params:\n
+        # -d | --dict: Run dictionary functions
+        # -g | --generator: Run generator functions
+        # -i | --iter: Run iteration functions
+        # -l | --list: Run list functions
+        # -s | --set: Run set functions
+        # -t | --tuple: Run tuple functions
+        # '''
+        # print(help_msg)
+        return
     
-#     try:
-#         options, args = getopt.getopt(argv, 'dgilt:c:p:r:', ['cython', 'dict', 'generator', 'iter', 'list', 'tuple'])
-#     except getopt.GetoptError:
-#         logging.warning(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-#         logging.warning('Option doesn\'t exist')
-#         sys.exit(2)
+    try:
+        options, _ = getopt.getopt(argv, 'dgilstc:p:r:', ['cython', 'dict', 'generator', 'iter', 'list', 'set', 'tuple'])
 
-#     for opt, arg in options:
-#         if opt in ['-d', '--dict']:
-#             from functions import dicts
-#             dicts.run()
-#         elif opt in ['-g', '--generator']:
-#             from functions import generators
-#             generators.run()
-#         elif opt in ['-d', '--dict']:
-#             from functions import dicts
-#             dicts.run()
-#         elif opt in ['-i', '--iter']:
-#             from functions import iterator
-#             iterator.run()
-#         elif opt in ['-l', '--list']:
-#             from functions import lists
-#             lists.run()
+    except getopt.GetoptError:
+        logging.warning(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        logging.warning('Option: %s doesn\'t exist\n', str(argv))
+        # help_msg = f'''ERROR: Option {str(argv)} doesn\'t exist, try any of following options:\n
+        # -d | --dict: Run dictionary functions
+        # -g | --generator: Run generator functions
+        # -i | --iter: Run iteration functions
+        # -l | --list: Run list functions
+        # -s | --set: Run set functions
+        # -t | --tuple: Run tuple functions
+        # '''
+        # print(help_msg)
+        sys.exit(2)
+
+    for opt, _ in options:
+        if opt in ['-d', '--dict']:
+            dicts.run(VERSION)
+        elif opt in ['-g', '--generator']:
+            generators.run(VERSION)
+        elif opt in ['-i', '--iter']:
+            iterator.run(VERSION)
+        elif opt in ['-l', '--list']:
+            lists.run(VERSION)
+        elif opt in ['-s', '--set']:
+            sets.run(VERSION)
+        elif opt in ['-t', '--tuple']:
+            tuples.run(VERSION)
 #         # elif opt == '-c':
 #              # from cpp import cpp
 #              # cpp.run()
@@ -59,43 +76,7 @@ logging.basicConfig(
         # elif opt == '-p':
         #     from functions import dicts
         #     dicts.run() PROFILER RUN
-            # elif opt == '-r':
-            #     reload_data = True
         
 
 if __name__ == '__main__':
-    # time1 = l.list_comprehension(1_000_000)
-    # time2 = l.list_append([x for x in range(1_000_000)])
-    # # print('Comp:', time1)
-    # # print('App:', time2)
-    # # time = l.list_sort([random.choice(1000) for _ in range(100_000)])
-    # time = t.tuple_append([x for x in range(100_000)])
-    # time = t.tuple_sort(tuple([random.choice(range(10_000)) for _ in range(10)]))
-
-    # time = d.dictionary_comprehension([x for x in range(100_000)], [x for x in range(100_000)])
-    # time = d.dictionary_insert([x for x in range(1_000_000)], [x for x in range(1_000_000)])
-    # time = g.generator_iter([x for x in range(1_000_000)])
-
-    # # first_name = ''
-    # # last_name = ''
-    # # argv = sys.argv[1:]
-
-    # # try:
-    # #     opts, args = getopt.getopt(argv, 'f:l:', ['first_name =', 'last_name ='])
-    # # except:
-    # #     print('Error')
-
-    # # for opt, arg in opts:
-    # #     print(opt)
-    # #     if opt in ['-f', '--first_name']:
-    # #         first_name = arg
-    # #     elif opt in ['-l', '--last_name']:
-    # #         last_name = arg
-        
-    # # print(first_name + ' ' + last_name)
-    # # print(VERSION)
-    # time = i.iteration_test(set(range(1_000_000)))
-    # time = i.iteration_test(list(range(1_000_000)))
-    # time = i.iteration_test(tuple(range(1_000_000)))
-    
-    generate_data.generate_dict_keys(10, reload=reload_data)
+    main(sys.argv[1:])

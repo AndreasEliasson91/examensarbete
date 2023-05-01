@@ -1,11 +1,27 @@
 import logging
+import random
 from datetime import datetime
 
 import utils
 from utils import Timer
 
 
-def tuple_append(values: list) -> float:
+# def run(version: str):
+def run(version):
+    random.seed(42)
+    results = list()
+    amounts = [10000, 50000, 100000]
+
+    for amount in amounts:
+        # results.append([f'tuple_append_{str(amount)}', tuple_append([i for i in range(amount)]), version])
+        results.append(['tuple_append_{0}'.format(str(amount)), tuple_append([i for i in range(amount)]), version])
+        # results.append([f'tuple_sort_{str(amount)}', tuple_sort([random.randint(0,100) for _ in range(amount)]), version])
+        results.append(['tuple_sort_{0}'.format(str(amount)), tuple_sort([random.randint(0,100) for _ in range(amount)]), version])
+
+    utils.write_to_csv('tuple', results)
+
+# def tuple_append(values: list) -> float:
+def tuple_append(values):
     logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     timer = Timer()
 
@@ -22,7 +38,8 @@ def tuple_append(values: list) -> float:
     utils.devnull(tuple_)
     return timer.runtime
 
-def tuple_sort(tuple_: tuple) -> float:
+# def tuple_sort(tuple_: tuple) -> float:
+def tuple_sort(tuple_):
     logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     timer = Timer()
 
