@@ -18,7 +18,7 @@ def run(version):
         # results.append([f'tuple_sort_{str(amount)}', tuple_sort([random.randint(0,100) for _ in range(amount)]), version])
         results.append(['tuple_sort_{0}'.format(str(amount)), tuple_sort([random.randint(0,100) for _ in range(amount)]), version])
 
-    utils.write_to_csv('tuple', results)
+    # utils.write_to_csv('tuple', results)
 
 # def tuple_append(values: list) -> float:
 def tuple_append(values):

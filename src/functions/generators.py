@@ -15,7 +15,7 @@ def run(version):
         # results.append([f'generator_iter_{str(amount)}', generator_iter([i for i in range(amount)]), version])
         results.append(['generator_iter_{0}'.format(str(amount)), generator_iter([i for i in range(amount)]), version])
 
-    utils.write_to_csv('generator', results)
+    # utils.write_to_csv('generator', results)
 
 # def generate_generator(values: list) -> Any:
 # def generate_generator(values: list):

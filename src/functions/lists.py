@@ -20,7 +20,7 @@ def run(version):
         # results.append([f'list_sort_{str(amount)}', list_sort([random.randint(0,100) for _ in range(amount)]), version])
         results.append(['list_sort_{0}'.format(str(amount)), list_sort([random.randint(0,100) for _ in range(amount)]), version])
 
-    utils.write_to_csv('list', results)
+    # utils.write_to_csv('list', results)
 
 # def list_comprehension(amount: int) -> float:
 def list_comprehension(amount):

@@ -3900,3 +3900,190 @@ INFO:2023-05-01 14:22:48
 INFO:Writing tuple results to csv
 INFO:tuple done!
 
+WARNING:2023-05-01 14:46:52
+WARNING:Couldn't run MAIN(). Not enough CL parameters
+
+INFO:2023-05-02 08:26:30
+INFO:Start dictionary_comprehension() on dict with 10000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.0009827613830566406 seconds
+
+INFO:2023-05-02 08:26:30
+INFO:Start dictionary_insert() on dict with 10000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	0.016182422637939453 seconds
+
+INFO:2023-05-02 08:26:30
+INFO:Start dictionary_merge() on dicts with 10000 and 10000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.001001596450805664 seconds
+
+INFO:2023-05-02 08:26:30
+INFO:Start read_dictionary_values() on dict with 10000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	0.2186129093170166 seconds
+
+INFO:2023-05-02 08:26:30
+INFO:Start dictionary_comprehension() on dict with 500000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.1103668212890625 seconds
+
+INFO:2023-05-02 08:26:30
+INFO:Start dictionary_insert() on dict with 500000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	0.9404013156890869 seconds
+
+INFO:2023-05-02 08:26:31
+INFO:Start dictionary_merge() on dicts with 500000 and 500000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.09193181991577148 seconds
+
+INFO:2023-05-02 08:26:32
+INFO:Start read_dictionary_values() on dict with 500000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	12.856475591659546 seconds
+
+INFO:2023-05-02 08:26:45
+INFO:Start dictionary_comprehension() on dict with 1000000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.24933457374572754 seconds
+
+INFO:2023-05-02 08:26:45
+INFO:Start dictionary_insert() on dict with 1000000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	2.089648723602295 seconds
+
+INFO:2023-05-02 08:26:48
+INFO:Start dictionary_merge() on dicts with 1000000 and 1000000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.19864177703857422 seconds
+
+INFO:2023-05-02 08:26:48
+INFO:Start read_dictionary_values() on dict with 1000000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	23.024964094161987 seconds
+
+INFO:2023-05-02 08:27:11
+INFO:Writing dictionary results to csv
+INFO:dictionary done!
+
+INFO:2023-05-02 08:56:08
+INFO:Start dictionary_comprehension() on dict with 10000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.002014636993408203 seconds
+
+INFO:2023-05-02 08:56:08
+INFO:Start dictionary_insert() on dict with 10000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	0.017119407653808594 seconds
+
+INFO:2023-05-02 08:56:08
+INFO:Start dictionary_merge() on dicts with 10000 and 10000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.0009906291961669922 seconds
+
+INFO:2023-05-02 08:56:08
+INFO:Start read_dictionary_values() on dict with 10000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	0.23156118392944336 seconds
+
+INFO:2023-05-02 08:56:08
+INFO:Start dictionary_comprehension() on dict with 500000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.10508561134338379 seconds
+
+INFO:2023-05-02 08:56:08
+INFO:Start dictionary_insert() on dict with 500000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	1.090848684310913 seconds
+
+INFO:2023-05-02 08:56:10
+INFO:Start dictionary_merge() on dicts with 500000 and 500000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.08770418167114258 seconds
+
+INFO:2023-05-02 08:56:10
+INFO:Start read_dictionary_values() on dict with 500000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	11.401803970336914 seconds
+
+INFO:2023-05-02 08:56:22
+INFO:Start dictionary_comprehension() on dict with 1000000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.26136040687561035 seconds
+
+INFO:2023-05-02 08:56:22
+INFO:Start dictionary_insert() on dict with 1000000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	1.9595260620117188 seconds
+
+INFO:2023-05-02 08:56:24
+INFO:Start dictionary_merge() on dicts with 1000000 and 1000000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.19823598861694336 seconds
+
+INFO:2023-05-02 08:56:25
+INFO:Start read_dictionary_values() on dict with 1000000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	24.78912377357483 seconds
+
+INFO:2023-05-02 08:58:29
+INFO:Start dictionary_comprehension() on dict with 10000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.003001689910888672 seconds
+
+INFO:2023-05-02 08:58:29
+INFO:Start dictionary_insert() on dict with 10000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	0.026187896728515625 seconds
+
+INFO:2023-05-02 08:58:29
+INFO:Start dictionary_merge() on dicts with 10000 and 10000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.002012014389038086 seconds
+
+INFO:2023-05-02 08:58:29
+INFO:Start read_dictionary_values() on dict with 10000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	0.41078782081604004 seconds
+
+INFO:2023-05-02 08:58:30
+INFO:Start dictionary_comprehension() on dict with 500000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.1789226531982422 seconds
+
+INFO:2023-05-02 08:58:30
+INFO:Start dictionary_insert() on dict with 500000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	1.9205353260040283 seconds
+
+INFO:2023-05-02 08:58:32
+INFO:Start dictionary_merge() on dicts with 500000 and 500000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.10284280776977539 seconds
+
+INFO:2023-05-02 08:58:32
+INFO:Start read_dictionary_values() on dict with 500000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	13.164148569107056 seconds
+
+INFO:2023-05-02 08:58:46
+INFO:Start dictionary_comprehension() on dict with 1000000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.24028825759887695 seconds
+
+INFO:2023-05-02 08:58:46
+INFO:Start dictionary_insert() on dict with 1000000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	1.9541847705841064 seconds
+
+INFO:2023-05-02 08:58:48
+INFO:Start dictionary_merge() on dicts with 1000000 and 1000000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.22039484977722168 seconds
+
+INFO:2023-05-02 08:58:49
+INFO:Start read_dictionary_values() on dict with 1000000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	24.259977102279663 seconds
+

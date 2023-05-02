@@ -18,7 +18,7 @@ def run(version):
         # results.append([f'iteration_test_list_{str(amount)}', iteration_test(list(i for i in range(amount))), version])
         results.append(['iteration_test_list_{0}'.format(str(amount)), iteration_test(list(i for i in range(amount))), version])
 
-    utils.write_to_csv('iterator', results)
+    # utils.write_to_csv('iterator', results)
 
 # def iteration_test(iterable: iter) -> float:
 def iteration_test(iterable):

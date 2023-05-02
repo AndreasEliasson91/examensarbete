@@ -19,7 +19,7 @@ def run(version):
             version
         ])
 
-    utils.write_to_csv('set', results)
+    # utils.write_to_csv('set', results)
 
 
 # def set_merge(set_one: set, set_two: set) -> float:

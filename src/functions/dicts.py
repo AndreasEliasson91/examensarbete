@@ -35,7 +35,7 @@ def run(version):
         # results.append([f'read_dictionary_values_{str(amount)}', read_dictionary_values({k: v for k, v in zip(keys, values)}), version])
         results.append(['read_dictionary_values_{0}'.format(str(amount)), read_dictionary_values({k: v for k, v in zip(keys, values)}), version])
 
-    utils.write_to_csv('dictionary', results)
+    # utils.write_to_csv('dictionary', results)
 
 
 

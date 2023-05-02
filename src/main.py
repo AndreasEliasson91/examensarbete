@@ -1,9 +1,12 @@
+import cProfile, pstats
 import getopt
 import logging
 import platform
 import sys
+
 from datetime import datetime
 
+from src.test_cases import cython_run
 from functions import dicts
 from functions import generators
 from functions import iterator
@@ -13,6 +16,7 @@ from functions import tuples
 
 
 VERSION = platform.python_version()
+PROFILING = False
 
 logging.basicConfig(
     format='%(levelname)s:%(message)s',
@@ -70,13 +74,26 @@ def main(argv):
 #         # elif opt == '-c':
 #              # from cpp import cpp
 #              # cpp.run()
-#         # elif opt == 'cython':
-#         #     from functions import dicts
-#         #     dicts.run()
-        # elif opt == '-p':
-        #     from functions import dicts
-        #     dicts.run() PROFILER RUN
+        elif opt == '--cython':
+            # test_cases.cython_run()
+            cython_run()
         
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    if PROFILING:
+        filename = '-'.join(VERSION.split('.'))
+
+        profiler = cProfile.Profile()
+        profiler.enable()
+
+        main(sys.argv[1:])
+
+        profiler.disable()
+
+        stats = pstats.Stats(profiler).sort_stats('cumtime')
+        stats.strip_dirs()
+
+        stats.print_stats()
+        stats.dump_stats('C:/code/projects/master-thesis/doc/results/cprofile/{0}.txt'.format(filename))
+    else:
+        main(sys.argv[1:])
