@@ -6,7 +6,7 @@ import sys
 
 from datetime import datetime
 
-from src.test_cases import cython_run
+# from src.test_cases import cython_run
 from functions import dicts
 from functions import generators
 from functions import iterator
@@ -80,20 +80,20 @@ def main(argv):
         
 
 if __name__ == '__main__':
-    if PROFILING:
-        filename = '-'.join(VERSION.split('.'))
+    # if PROFILING:
+    #     filename = '-'.join(VERSION.split('.'))
 
-        profiler = cProfile.Profile()
-        profiler.enable()
+    #     profiler = cProfile.Profile()
+    #     profiler.enable()
 
-        main(sys.argv[1:])
+    #     main(sys.argv[1:])
 
-        profiler.disable()
+    #     profiler.disable()
 
-        stats = pstats.Stats(profiler).sort_stats('cumtime')
-        stats.strip_dirs()
+    #     stats = pstats.Stats(profiler).sort_stats('cumtime')
+    #     stats.strip_dirs()
 
-        stats.print_stats()
-        stats.dump_stats('C:/code/projects/master-thesis/doc/results/cprofile/{0}.txt'.format(filename))
-    else:
-        main(sys.argv[1:])
+    #     stats.print_stats()
+    #     stats.dump_stats('C:/code/projects/master-thesis/doc/results/cprofile/{0}.txt'.format(filename))
+    # else:
+    main(sys.argv[1:])

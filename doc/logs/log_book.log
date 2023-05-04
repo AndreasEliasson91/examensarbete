@@ -4087,3 +4087,438 @@ INFO:Start read_dictionary_values() on dict with 1000000 elements
 INFO:Finalizing read_dictionary_values()
 INFO:Result:	24.259977102279663 seconds
 
+INFO:2023-05-04 10:53:28
+INFO:Start dictionary_comprehension() on dict with 10000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.0035371780395507812 seconds
+
+INFO:2023-05-04 10:53:28
+INFO:Start dictionary_insert() on dict with 10000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	0.0 seconds
+
+INFO:2023-05-04 10:53:28
+INFO:Start dictionary_merge() on dicts with 10000 and 10000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.0 seconds
+
+INFO:2023-05-04 10:53:28
+INFO:Start read_dictionary_values() on dict with 10000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	0.19659018516540527 seconds
+
+INFO:2023-05-04 10:53:28
+INFO:Start dictionary_comprehension() on dict with 500000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.09546637535095215 seconds
+
+INFO:2023-05-04 10:53:28
+INFO:Start dictionary_insert() on dict with 500000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	0.6412954330444336 seconds
+
+INFO:2023-05-04 10:53:29
+INFO:Start dictionary_merge() on dicts with 500000 and 500000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.07870888710021973 seconds
+
+INFO:2023-05-04 10:53:29
+INFO:Start read_dictionary_values() on dict with 500000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	9.126911878585815 seconds
+
+INFO:2023-05-04 10:53:39
+INFO:Start dictionary_comprehension() on dict with 1000000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.2577476501464844 seconds
+
+INFO:2023-05-04 10:53:39
+INFO:Start dictionary_insert() on dict with 1000000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	1.2210783958435059 seconds
+
+INFO:2023-05-04 10:53:41
+INFO:Start dictionary_merge() on dicts with 1000000 and 1000000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.22025704383850098 seconds
+
+INFO:2023-05-04 10:53:41
+INFO:Start read_dictionary_values() on dict with 1000000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	23.469610452651978 seconds
+
+INFO:2023-05-04 10:54:05
+INFO:Start generator_iter() with 10000 elements
+INFO:Finalizing generator_iter()
+INFO:Result:	0.18460607528686523 seconds
+
+INFO:2023-05-04 10:54:05
+INFO:Start generator_iter() with 500000 elements
+INFO:Finalizing generator_iter()
+INFO:Result:	9.658086776733398 seconds
+
+INFO:2023-05-04 10:54:15
+INFO:Start generator_iter() with 1000000 elements
+INFO:Finalizing generator_iter()
+INFO:Result:	20.328938245773315 seconds
+
+INFO:2023-05-04 10:54:35
+INFO:Start iteration_test() on <class 'set'> with 1000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	0.013066530227661133 seconds
+
+INFO:2023-05-04 10:54:35
+INFO:Start iteration_test() on <class 'tuple'> with 1000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	0.009045124053955078 seconds
+
+INFO:2023-05-04 10:54:36
+INFO:Start iteration_test() on <class 'list'> with 1000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	0.015641450881958008 seconds
+
+INFO:2023-05-04 10:54:48
+INFO:Start iteration_test() on <class 'set'> with 50000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	8.431477546691895 seconds
+
+INFO:2023-05-04 10:55:02
+INFO:Start iteration_test() on <class 'tuple'> with 50000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	0.9211826324462891 seconds
+
+INFO:2023-05-04 10:55:07
+INFO:Start iteration_test() on <class 'list'> with 50000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	0.7473795413970947 seconds
+
+INFO:2023-05-04 10:55:29
+INFO:Start iteration_test() on <class 'set'> with 100000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	48.636223554611206 seconds
+
+INFO:2023-05-04 10:57:04
+INFO:Start iteration_test() on <class 'tuple'> with 100000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	21.864014387130737 seconds
+
+INFO:2023-05-04 10:57:38
+INFO:Start iteration_test() on <class 'list'> with 100000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	28.02500820159912 seconds
+
+INFO:2023-05-04 10:58:10
+INFO:Start list_comprehension() with 10000 elements
+INFO:Finalizing list_comprehension()
+INFO:Result:	0.0 seconds
+
+INFO:2023-05-04 10:58:10
+INFO:Start list_append() with list containing 10000 elements
+INFO:Finalizing list_append()
+INFO:Result:	0.0 seconds
+
+INFO:2023-05-04 10:58:10
+INFO:Start list_sort() with list containing 10000 elements
+INFO:Finalizing list_sort()
+INFO:Result:	0.0 seconds
+
+INFO:2023-05-04 10:58:10
+INFO:Start list_comprehension() with 500000 elements
+INFO:Finalizing list_comprehension()
+INFO:Result:	0.03164267539978027 seconds
+
+INFO:2023-05-04 10:58:10
+INFO:Start list_append() with list containing 500000 elements
+INFO:Finalizing list_append()
+INFO:Result:	0.04638934135437012 seconds
+
+INFO:2023-05-04 10:58:10
+INFO:Start list_sort() with list containing 500000 elements
+INFO:Finalizing list_sort()
+INFO:Result:	0.07856321334838867 seconds
+
+INFO:2023-05-04 10:58:10
+INFO:Start list_comprehension() with 1000000 elements
+INFO:Finalizing list_comprehension()
+INFO:Result:	0.04938554763793945 seconds
+
+INFO:2023-05-04 10:58:10
+INFO:Start list_append() with list containing 1000000 elements
+INFO:Finalizing list_append()
+INFO:Result:	0.06300091743469238 seconds
+
+INFO:2023-05-04 10:58:11
+INFO:Start list_sort() with list containing 1000000 elements
+INFO:Finalizing list_sort()
+INFO:Result:	0.12600970268249512 seconds
+
+INFO:2023-05-04 10:58:11
+INFO:Start set_merge() on sets with 7881 and 7850 elements
+INFO:Finalizing set_merge()
+INFO:Result:	0.0 seconds
+
+INFO:2023-05-04 10:58:13
+INFO:Start set_merge() on sets with 393420 and 392854 elements
+INFO:Finalizing set_merge()
+INFO:Result:	0.06296491622924805 seconds
+
+INFO:2023-05-04 10:58:15
+INFO:Start set_merge() on sets with 787292 and 786979 elements
+INFO:Finalizing set_merge()
+INFO:Result:	0.10972189903259277 seconds
+
+INFO:2023-05-04 10:58:15
+INFO:Start tuple_append() on tuple with 10000 elements
+INFO:Finalizing tuple_append()
+INFO:Result:	0.15241384506225586 seconds
+
+INFO:2023-05-04 10:58:15
+INFO:Start tuple_sort() on tuple with 10000 elements
+INFO:Finalizing tuple_sort()
+INFO:Result:	0.0 seconds
+
+INFO:2023-05-04 10:58:15
+INFO:Start tuple_append() on tuple with 50000 elements
+INFO:Finalizing tuple_append()
+INFO:Result:	4.520028114318848 seconds
+
+INFO:2023-05-04 10:58:20
+INFO:Start tuple_sort() on tuple with 50000 elements
+INFO:Finalizing tuple_sort()
+INFO:Result:	0.015620946884155273 seconds
+
+INFO:2023-05-04 10:58:20
+INFO:Start tuple_append() on tuple with 100000 elements
+INFO:Finalizing tuple_append()
+INFO:Result:	22.419302701950073 seconds
+
+INFO:2023-05-04 10:58:42
+INFO:Start tuple_sort() on tuple with 100000 elements
+INFO:Finalizing tuple_sort()
+INFO:Result:	0.01574873924255371 seconds
+
+INFO:2023-05-04 11:02:11
+INFO:Start dictionary_comprehension() on dict with 10000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.0010001659393310547 seconds
+
+INFO:2023-05-04 11:02:11
+INFO:Start dictionary_insert() on dict with 10000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	0.005011796951293945 seconds
+
+INFO:2023-05-04 11:02:11
+INFO:Start dictionary_merge() on dicts with 10000 and 10000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.0 seconds
+
+INFO:2023-05-04 11:02:11
+INFO:Start read_dictionary_values() on dict with 10000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	0.27898144721984863 seconds
+
+INFO:2023-05-04 11:02:11
+INFO:Start dictionary_comprehension() on dict with 500000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.11710572242736816 seconds
+
+INFO:2023-05-04 11:02:11
+INFO:Start dictionary_insert() on dict with 500000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	0.6806926727294922 seconds
+
+INFO:2023-05-04 11:02:12
+INFO:Start dictionary_merge() on dicts with 500000 and 500000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.09883236885070801 seconds
+
+INFO:2023-05-04 11:02:12
+INFO:Start read_dictionary_values() on dict with 500000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	10.884411334991455 seconds
+
+INFO:2023-05-04 11:02:24
+INFO:Start dictionary_comprehension() on dict with 1000000 elements
+INFO:Finalizing dictionary_comprehension()
+INFO:Result:	0.23161578178405762 seconds
+
+INFO:2023-05-04 11:02:24
+INFO:Start dictionary_insert() on dict with 1000000 elements
+INFO:Finalizing dictionary_insert()
+INFO:Result:	1.2710957527160645 seconds
+
+INFO:2023-05-04 11:02:26
+INFO:Start dictionary_merge() on dicts with 1000000 and 1000000 elements
+INFO:Finalizing dictionary_merge()
+INFO:Result:	0.22495436668395996 seconds
+
+INFO:2023-05-04 11:02:26
+INFO:Start read_dictionary_values() on dict with 1000000 elements
+INFO:Finalizing read_dictionary_values()
+INFO:Result:	18.843756914138794 seconds
+
+INFO:2023-05-04 11:03:29
+INFO:Start generator_iter() with 10000 elements
+INFO:Finalizing generator_iter()
+INFO:Result:	0.3322274684906006 seconds
+
+INFO:2023-05-04 11:03:29
+INFO:Start generator_iter() with 500000 elements
+INFO:Finalizing generator_iter()
+INFO:Result:	10.8565194606781 seconds
+
+INFO:2023-05-04 11:03:40
+INFO:Start generator_iter() with 1000000 elements
+INFO:Finalizing generator_iter()
+INFO:Result:	22.631059169769287 seconds
+
+INFO:2023-05-04 11:06:05
+INFO:Start generator_iter() with 10000 elements
+INFO:Finalizing generator_iter()
+INFO:Result:	0.19931745529174805 seconds
+
+INFO:2023-05-04 11:06:05
+INFO:Start generator_iter() with 500000 elements
+INFO:Finalizing generator_iter()
+INFO:Result:	11.209736824035645 seconds
+
+INFO:2023-05-04 11:06:16
+INFO:Start generator_iter() with 1000000 elements
+INFO:Finalizing generator_iter()
+INFO:Result:	23.1279034614563 seconds
+
+INFO:2023-05-04 11:07:50
+INFO:Start iteration_test() on <class 'set'> with 1000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	0.02126622200012207 seconds
+
+INFO:2023-05-04 11:07:50
+INFO:Start iteration_test() on <class 'tuple'> with 1000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	0.01401519775390625 seconds
+
+INFO:2023-05-04 11:07:51
+INFO:Start iteration_test() on <class 'list'> with 1000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	0.006581783294677734 seconds
+
+INFO:2023-05-04 11:08:01
+INFO:Start iteration_test() on <class 'set'> with 50000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	3.757185459136963 seconds
+
+INFO:2023-05-04 11:08:11
+INFO:Start iteration_test() on <class 'tuple'> with 50000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	1.0056910514831543 seconds
+
+INFO:2023-05-04 11:08:17
+INFO:Start iteration_test() on <class 'list'> with 50000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	0.7033298015594482 seconds
+
+INFO:2023-05-04 11:08:43
+INFO:Start iteration_test() on <class 'set'> with 100000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	35.41843128204346 seconds
+
+INFO:2023-05-04 11:10:07
+INFO:Start iteration_test() on <class 'tuple'> with 100000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	22.006935358047485 seconds
+
+INFO:2023-05-04 11:10:44
+INFO:Start iteration_test() on <class 'list'> with 100000000 elements
+INFO:Finalizing iteration_test()
+INFO:Result:	21.5375497341156 seconds
+
+INFO:2023-05-04 11:13:28
+INFO:Start list_comprehension() with 10000 elements
+INFO:Finalizing list_comprehension()
+INFO:Result:	0.0005056858062744141 seconds
+
+INFO:2023-05-04 11:13:28
+INFO:Start list_append() with list containing 10000 elements
+INFO:Finalizing list_append()
+INFO:Result:	0.0 seconds
+
+INFO:2023-05-04 11:13:28
+INFO:Start list_sort() with list containing 10000 elements
+INFO:Finalizing list_sort()
+INFO:Result:	0.0019965171813964844 seconds
+
+INFO:2023-05-04 11:13:28
+INFO:Start list_comprehension() with 500000 elements
+INFO:Finalizing list_comprehension()
+INFO:Result:	0.03799796104431152 seconds
+
+INFO:2023-05-04 11:13:28
+INFO:Start list_append() with list containing 500000 elements
+INFO:Finalizing list_append()
+INFO:Result:	0.037047386169433594 seconds
+
+INFO:2023-05-04 11:13:29
+INFO:Start list_sort() with list containing 500000 elements
+INFO:Finalizing list_sort()
+INFO:Result:	0.042641401290893555 seconds
+
+INFO:2023-05-04 11:13:29
+INFO:Start list_comprehension() with 1000000 elements
+INFO:Finalizing list_comprehension()
+INFO:Result:	0.05363154411315918 seconds
+
+INFO:2023-05-04 11:13:29
+INFO:Start list_append() with list containing 1000000 elements
+INFO:Finalizing list_append()
+INFO:Result:	0.06578302383422852 seconds
+
+INFO:2023-05-04 11:13:30
+INFO:Start list_sort() with list containing 1000000 elements
+INFO:Finalizing list_sort()
+INFO:Result:	0.12060379981994629 seconds
+
+INFO:2023-05-04 11:14:34
+INFO:Start set_merge() on sets with 7881 and 7850 elements
+INFO:Finalizing set_merge()
+INFO:Result:	0.0010044574737548828 seconds
+
+INFO:2023-05-04 11:14:35
+INFO:Start set_merge() on sets with 393420 and 392854 elements
+INFO:Finalizing set_merge()
+INFO:Result:	0.05962085723876953 seconds
+
+INFO:2023-05-04 11:14:37
+INFO:Start set_merge() on sets with 787292 and 786979 elements
+INFO:Finalizing set_merge()
+INFO:Result:	0.12543773651123047 seconds
+
+INFO:2023-05-04 11:15:32
+INFO:Start tuple_append() on tuple with 10000 elements
+INFO:Finalizing tuple_append()
+INFO:Result:	0.14850187301635742 seconds
+
+INFO:2023-05-04 11:15:32
+INFO:Start tuple_sort() on tuple with 10000 elements
+INFO:Finalizing tuple_sort()
+INFO:Result:	0.0020072460174560547 seconds
+
+INFO:2023-05-04 11:15:32
+INFO:Start tuple_append() on tuple with 50000 elements
+INFO:Finalizing tuple_append()
+INFO:Result:	4.19583535194397 seconds
+
+INFO:2023-05-04 11:15:36
+INFO:Start tuple_sort() on tuple with 50000 elements
+INFO:Finalizing tuple_sort()
+INFO:Result:	0.017519474029541016 seconds
+
+INFO:2023-05-04 11:15:36
+INFO:Start tuple_append() on tuple with 100000 elements
+INFO:Finalizing tuple_append()
+INFO:Result:	18.922349452972412 seconds
+
+INFO:2023-05-04 11:15:55
+INFO:Start tuple_sort() on tuple with 100000 elements
+INFO:Finalizing tuple_sort()
+INFO:Result:	0.0156400203704834 seconds
+
