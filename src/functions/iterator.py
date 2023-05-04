@@ -4,34 +4,48 @@ from datetime import datetime
 import utils
 from utils import Timer
 
+AMOUNT = 1000000
+NUM_ROUNDS = 10
 
 # def run(version: str):
 def run(version):
+    total_timer = Timer()
     results = list()
-    amounts = [1000000, 50000000, 100000000]
 
-    for amount in amounts:
-        # results.append([f'iteration_test_set_{str(amount)}', iteration_test(set(i for i in range(amount))), version])
-        results.append(['iteration_test_set_{0}'.format(str(amount)), iteration_test(set(i for i in range(amount))), version])
-        # results.append([f'iteration_test_tuple_{str(amount)}', iteration_test(tuple(i for i in range(amount))), version])
-        results.append(['iteration_test_tuple_{0}'.format(str(amount)), iteration_test(tuple(i for i in range(amount))), version])
-        # results.append([f'iteration_test_list_{str(amount)}', iteration_test(list(i for i in range(amount))), version])
-        results.append(['iteration_test_list_{0}'.format(str(amount)), iteration_test(list(i for i in range(amount))), version])
+    list_values = list(i for i in range(AMOUNT))
+    set_values = set(i for i in range(AMOUNT))
+    tuple_values = tuple(i for i in range(AMOUNT))
 
-    # utils.write_to_csv('iterator', results)
+    logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+    logging.info('START ITERATOR TEST CASES FOR V. %s\n', version)
+
+    with total_timer:
+        for i in range(NUM_ROUNDS):
+            date_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+            logging.info('Round %s of %s\n', str(i+1), str(NUM_ROUNDS))
+
+            # results.append([f'iteration_test_set_{str(i+1)}', iteration_test(set_values), version])
+            results.append([date_time, 'iteration_test_set', AMOUNT, iteration_test(set_values), version])
+            # results.append([f'iteration_test_tuple_{str(i+1)}', iteration_test(tuple_values), version])
+            results.append([date_time, 'iteration_test_tuple', AMOUNT, iteration_test(tuple_values), version])
+            # results.append([f'iteration_test_list_{str(i+1)}', iteration_test(list_values), version])
+            results.append([date_time, 'iteration_test_list', AMOUNT, iteration_test(list_values), version])
+
+        logging.info('FINALIZING ITERATOR TEST CASES')
+    logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
+    utils.write_to_csv('iterator', results)
 
 # def iteration_test(iterable: iter) -> float:
 def iteration_test(iterable):
-    logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     timer = Timer()
+    logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     
     with timer:
-        logging.info('Start iteration_test() on %s with %s elements', type(iterable), len(iterable))
+        logging.info('iteration_test() on %s', type(iterable))
 
         for _ in iterable:
             pass
-
-        logging.info('Finalizing iteration_test()')
 
     logging.info('Result:\t%s seconds\n', timer.runtime)
     return timer.runtime

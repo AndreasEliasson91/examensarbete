@@ -5,21 +5,31 @@ from datetime import datetime
 import utils
 from utils import Timer
 
+random.seed(42)
+AMOUNT = 1000000
+NUM_ROUNDS = 10
+
 # def run(version: str):
 def run(version):
-    random.seed(42)
+    total_timer = Timer()
     results = list()
-    amounts = [10000, 500000, 1000000]
 
-    for amount in amounts:
-        results.append([
-            # f'set_merge_{str(amount)}',
-            'set_merge_{0}'.format(str(amount)),
-            set_merge(set(random.randint(0,amount*2) for _ in range(amount)), set(random.randint(0,amount*2) for _ in range(amount))),
-            version
-        ])
+    set_one = set(random.randint(0,AMOUNT*2) for _ in range(AMOUNT))
+    set_two = set(random.randint(0,AMOUNT*2) for _ in range(AMOUNT))
 
-    # utils.write_to_csv('set', results)
+    logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+    logging.info('START SET TEST CASES FOR V. %s\n', version)
+    with total_timer:
+        for i in range(NUM_ROUNDS):
+            date_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+            logging.info('Round %s of %s\n', str(i+1), str(NUM_ROUNDS))
+                # f'set_merge_{str(i+1)}',
+            results.append([date_time, 'set_merge', AMOUNT, set_merge(set_one, set_two), version])
+        
+        logging.info('FINALIZING SET TEST CASES')
+    logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
+    utils.write_to_csv('set', results)
 
 
 # def set_merge(set_one: set, set_two: set) -> float:
@@ -28,11 +38,8 @@ def set_merge(set_one, set_two):
     timer = Timer()
 
     with timer:
-        logging.info('Start set_merge() on sets with %s and %s elements', len(set_one), len(set_two))
-
+        logging.info('set_merge()')
         set_one.update(set_two)
-        
-        logging.info('Finalizing set_merge()')
 
     logging.info('Result:\t%s seconds\n', timer.runtime)
 

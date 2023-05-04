@@ -6,7 +6,10 @@ import sys
 
 from datetime import datetime
 
-# from src.test_cases import cython_run
+
+ # TODO: Fix import of cython implementation
+ 
+# from cython_test_cases import cython_run
 from functions import dicts
 from functions import generators
 from functions import iterator
@@ -21,7 +24,8 @@ PROFILING = False
 logging.basicConfig(
     format='%(levelname)s:%(message)s',
     level=logging.INFO,
-    filename='c:/code/projects/master-thesis/doc/logs/log_book.log'  # TODO: CHANG THIS
+    filename='c:/code/projects/master-thesis/doc/logs/test_cases.log'
+    # filename='c:/code/projects/master-thesis/doc/logs/log_book.log'
 )
 
 
@@ -74,9 +78,8 @@ def main(argv):
 #         # elif opt == '-c':
 #              # from cpp import cpp
 #              # cpp.run()
-        elif opt == '--cython':
-            # test_cases.cython_run()
-            cython_run()
+        # elif opt == '--cython':
+        #     cython_run()
         
 
 if __name__ == '__main__':

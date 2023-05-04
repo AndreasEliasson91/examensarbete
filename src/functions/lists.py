@@ -5,22 +5,35 @@ from datetime import datetime
 import utils
 from utils import Timer
 
+random.seed(42)
+AMOUNT = 1000000
+NUM_ROUNDS = 10
 
 # def run(version: str):
 def run(version):
-    random.seed(42)
+    total_timer = Timer()
     results = list()
-    amounts = [10000, 500000, 1000000]
 
-    for amount in amounts:
-        # results.append([f'list_comprehension_{str(amount)}', list_comprehension(amount), version])
-        results.append(['list_comprehension_{0}'.format(str(amount)), list_comprehension(amount), version])
-        # results.append([f'list_append_{str(amount)}', list_append([i for i in range(amount)]), version])
-        results.append(['list_append_{0}'.format(str(amount)), list_append([i for i in range(amount)]), version])
-        # results.append([f'list_sort_{str(amount)}', list_sort([random.randint(0,100) for _ in range(amount)]), version])
-        results.append(['list_sort_{0}'.format(str(amount)), list_sort([random.randint(0,100) for _ in range(amount)]), version])
+    append_list = [i for i in range(AMOUNT)]
+    sort_list = [random.randint(0,100) for _ in range(AMOUNT)]
 
-    # utils.write_to_csv('list', results)
+    logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+    logging.info('START LIST TEST CASES FOR V. %s\n', version)
+    with total_timer:
+        for i in range(NUM_ROUNDS):
+            date_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+            logging.info('Round %s of %s\n', str(i+1), str(NUM_ROUNDS))
+            # results.append([f'list_comprehension_{str(i+1)}', list_comprehension(AMOUNT), version])
+            results.append([date_time, 'list_comprehension', AMOUNT, list_comprehension(AMOUNT), version])
+            # results.append([f'list_append_{str(i+1)}', list_append(append_list), version])
+            results.append([date_time, 'list_append', AMOUNT, list_append(append_list), version])
+            # results.append([f'list_sort_{str(i+1)}', list_sort(sort_list), version])
+            results.append([date_time, 'list_sort', AMOUNT, list_sort(sort_list), version])
+        
+        logging.info('FINALIZING LIST TEST CASES')
+    logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
+    utils.write_to_csv('list', results)
 
 # def list_comprehension(amount: int) -> float:
 def list_comprehension(amount):
@@ -28,11 +41,8 @@ def list_comprehension(amount):
     timer = Timer()
 
     with timer:
-        logging.info('Start list_comprehension() with %s elements', amount)
-
+        logging.info('list_comprehension()')
         list_ = [x for x in range(amount)]
-
-        logging.info('Finalizing list_comprehension()')
 
     logging.info('Result:\t%s seconds\n', timer.runtime)
     utils.devnull(list_)
@@ -44,13 +54,11 @@ def list_append(values):
     timer = Timer()
 
     with timer:
-        logging.info('Start list_append() with list containing %s elements', len(values))
+        logging.info('list_append()')
         list_ = []
 
         for val in values:
             list_.append(val)
-
-        logging.info('Finalizing list_append()')
             
     logging.info('Result:\t%s seconds\n', timer.runtime)
     utils.devnull(list_)
@@ -62,12 +70,10 @@ def list_sort(list_):
     logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     timer = Timer()
 
+
     with timer:
-        logging.info('Start list_sort() with list containing %s elements', len(list_))
-
+        logging.info('list_sort()')
         sorted_list = sorted(list_)
-
-        logging.info('Finalizing list_sort()')
     
     logging.info('Result:\t%s seconds\n', timer.runtime)
     utils.devnull(sorted_list)

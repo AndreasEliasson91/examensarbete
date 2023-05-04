@@ -4522,3 +4522,678 @@ INFO:Start tuple_sort() on tuple with 100000 elements
 INFO:Finalizing tuple_sort()
 INFO:Result:	0.0156400203704834 seconds
 
+INFO:2023-05-04 19:58:59
+INFO:Start dictionary test case
+INFO:Total time dictionary test cases:	1.096954107284546 seconds
+
+INFO:2023-05-04 19:58:59
+INFO:Writing dictionary results to csv
+INFO:dictionary done!
+
+INFO:2023-05-04 20:00:40
+INFO:Start dictionary test case
+INFO:Total time dictionary test cases:	1.1517727375030518 seconds
+
+INFO:2023-05-04 20:00:40
+INFO:Writing dictionary results to csv
+INFO:dictionary done!
+
+INFO:2023-05-04 20:05:20
+INFO:Start dictionary test case
+
+INFO:2023-05-04 20:05:22
+INFO:Start dictionary_comprehension()
+INFO:Result:	4.904097557067871 seconds
+
+INFO:2023-05-04 20:05:37
+INFO:Start dictionary_insert()
+INFO:Result:	22.84544539451599 seconds
+
+INFO:2023-05-04 20:06:43
+INFO:Start dictionary test case
+INFO:2023-05-04 20:06:43
+INFO:Start dictionary_comprehension()
+INFO:Result:	1.483227252960205 seconds
+
+INFO:2023-05-04 20:06:43
+INFO:Start dictionary_insert()
+INFO:Result:	2.3209500312805176 seconds
+
+INFO:2023-05-04 20:06:44
+INFO:Start dictionary_merge()
+INFO:Result:	2.638676881790161 seconds
+
+INFO:2023-05-04 20:06:44
+INFO:Start read_dictionary_values()
+INFO:Result:	44.090346336364746 seconds
+
+INFO:2023-05-04 20:07:25
+INFO:Start dictionary_comprehension()
+INFO:Result:	44.33706569671631 seconds
+
+INFO:2023-05-04 20:07:26
+INFO:Start dictionary_insert()
+INFO:Result:	45.2847843170166 seconds
+
+INFO:2023-05-04 20:07:27
+INFO:Start dictionary_merge()
+INFO:Result:	45.42173409461975 seconds
+
+INFO:2023-05-04 20:07:27
+INFO:Start read_dictionary_values()
+INFO:Result:	47.318679332733154 seconds
+
+INFO:2023-05-04 20:07:29
+INFO:Start dictionary_comprehension()
+INFO:Result:	47.52867913246155 seconds
+
+INFO:2023-05-04 20:07:29
+INFO:Start dictionary_insert()
+INFO:Result:	48.137359619140625 seconds
+
+INFO:2023-05-04 20:07:29
+INFO:Start dictionary_merge()
+INFO:Result:	48.25230097770691 seconds
+
+INFO:2023-05-04 20:07:30
+INFO:Start read_dictionary_values()
+INFO:Result:	49.1128249168396 seconds
+
+INFO:2023-05-04 20:07:30
+INFO:Start dictionary_comprehension()
+INFO:Result:	49.357924461364746 seconds
+
+INFO:Total time elapsed for dictionary test cases:	49.35393452644348 seconds
+
+INFO:2023-05-04 20:07:31
+INFO:Writing dictionary results to csv
+INFO:dictionary done!
+
+INFO:2023-05-04 20:09:43
+INFO:Start dictionary test case
+INFO:2023-05-04 20:09:43
+INFO:Start dictionary_comprehension()
+INFO:Result:	1.745642900466919 seconds
+
+INFO:2023-05-04 20:09:43
+INFO:Start dictionary_insert()
+INFO:Result:	2.5363550186157227 seconds
+
+INFO:2023-05-04 20:09:44
+INFO:Start dictionary_merge()
+INFO:Result:	2.75314998626709 seconds
+
+INFO:2023-05-04 20:09:44
+INFO:Start read_dictionary_values()
+INFO:Result:	46.4328932762146 seconds
+
+INFO:2023-05-04 20:10:28
+INFO:Start dictionary_comprehension()
+INFO:Result:	46.65044689178467 seconds
+
+INFO:2023-05-04 20:10:28
+INFO:Start dictionary_insert()
+INFO:Result:	47.34516501426697 seconds
+
+INFO:2023-05-04 20:10:29
+INFO:Start dictionary_merge()
+INFO:Result:	47.47729706764221 seconds
+
+INFO:2023-05-04 20:10:29
+INFO:Start read_dictionary_values()
+INFO:Result:	87.84434080123901 seconds
+
+INFO:2023-05-04 20:11:09
+INFO:Start dictionary_comprehension()
+INFO:Result:	88.21243071556091 seconds
+
+INFO:2023-05-04 20:11:10
+INFO:Start dictionary_insert()
+INFO:Result:	89.09335112571716 seconds
+
+INFO:2023-05-04 20:11:11
+INFO:Start dictionary_merge()
+INFO:Result:	89.23993992805481 seconds
+
+INFO:2023-05-04 20:11:11
+INFO:Start read_dictionary_values()
+INFO:Result:	130.4518916606903 seconds
+
+INFO:2023-05-04 20:11:52
+INFO:Start dictionary_comprehension()
+INFO:Result:	130.76115107536316 seconds
+
+INFO:2023-05-04 20:11:52
+INFO:Start dictionary_insert()
+INFO:Result:	131.5357699394226 seconds
+
+INFO:2023-05-04 20:11:53
+INFO:Start dictionary_merge()
+INFO:Result:	131.6618332862854 seconds
+
+INFO:2023-05-04 20:11:53
+INFO:Start read_dictionary_values()
+INFO:Result:	172.74412369728088 seconds
+
+INFO:2023-05-04 20:12:34
+INFO:Start dictionary_comprehension()
+INFO:Result:	172.98733615875244 seconds
+
+INFO:2023-05-04 20:12:34
+INFO:Start dictionary_insert()
+INFO:Result:	173.69274425506592 seconds
+
+INFO:2023-05-04 20:12:35
+INFO:Start dictionary_merge()
+INFO:Result:	173.81492447853088 seconds
+
+INFO:2023-05-04 20:12:35
+INFO:Start read_dictionary_values()
+INFO:Result:	215.83473753929138 seconds
+
+INFO:2023-05-04 20:13:17
+INFO:Start dictionary_comprehension()
+INFO:Result:	216.0799596309662 seconds
+
+INFO:2023-05-04 20:13:18
+INFO:Start dictionary_insert()
+INFO:Result:	216.8183856010437 seconds
+
+INFO:2023-05-04 20:13:18
+INFO:Start dictionary_merge()
+INFO:Result:	216.94391083717346 seconds
+
+INFO:2023-05-04 20:13:18
+INFO:Start read_dictionary_values()
+INFO:Result:	256.2107698917389 seconds
+
+INFO:2023-05-04 20:13:58
+INFO:Start dictionary_comprehension()
+INFO:Result:	256.51462841033936 seconds
+
+INFO:2023-05-04 20:13:58
+INFO:Start dictionary_insert()
+INFO:Result:	257.33596324920654 seconds
+
+INFO:2023-05-04 20:13:59
+INFO:Start dictionary_merge()
+INFO:Result:	257.4908640384674 seconds
+
+INFO:2023-05-04 20:13:59
+INFO:Start read_dictionary_values()
+INFO:Result:	298.69189453125 seconds
+
+INFO:2023-05-04 20:14:40
+INFO:Start dictionary_comprehension()
+INFO:Result:	298.93417048454285 seconds
+
+INFO:2023-05-04 20:14:40
+INFO:Start dictionary_insert()
+INFO:Result:	299.66308975219727 seconds
+
+INFO:2023-05-04 20:14:41
+INFO:Start dictionary_merge()
+INFO:Result:	299.8086974620819 seconds
+
+INFO:2023-05-04 20:14:41
+INFO:Start read_dictionary_values()
+INFO:Result:	342.6987409591675 seconds
+
+INFO:2023-05-04 20:15:24
+INFO:Start dictionary_comprehension()
+INFO:Result:	342.9695439338684 seconds
+
+INFO:2023-05-04 20:15:24
+INFO:Start dictionary_insert()
+INFO:Result:	343.67430233955383 seconds
+
+INFO:2023-05-04 20:15:25
+INFO:Start dictionary_merge()
+INFO:Result:	343.79864382743835 seconds
+
+INFO:2023-05-04 20:15:25
+INFO:Start read_dictionary_values()
+INFO:Result:	391.2136170864105 seconds
+
+INFO:2023-05-04 20:16:13
+INFO:Start dictionary_comprehension()
+INFO:Result:	391.42835807800293 seconds
+
+INFO:2023-05-04 20:16:13
+INFO:Start dictionary_insert()
+INFO:Result:	392.2324266433716 seconds
+
+INFO:2023-05-04 20:16:14
+INFO:Start dictionary_merge()
+INFO:Result:	392.3616273403168 seconds
+
+INFO:2023-05-04 20:16:14
+INFO:Start read_dictionary_values()
+INFO:Result:	436.7335641384125 seconds
+
+INFO:2023-05-04 20:16:58
+INFO:Start dictionary_comprehension()
+INFO:Result:	437.0480742454529 seconds
+
+INFO:2023-05-04 20:16:58
+INFO:Start dictionary_insert()
+INFO:Result:	437.9426121711731 seconds
+
+INFO:2023-05-04 20:16:59
+INFO:Start dictionary_merge()
+INFO:Result:	438.1127622127533 seconds
+
+INFO:2023-05-04 20:17:00
+INFO:Start read_dictionary_values()
+INFO:Result:	482.9389684200287 seconds
+
+INFO:2023-05-04 20:17:44
+INFO:Start dictionary_comprehension()
+INFO:Result:	483.18898487091064 seconds
+
+INFO:2023-05-04 20:17:45
+INFO:Start dictionary_insert()
+INFO:Result:	484.1722059249878 seconds
+
+INFO:2023-05-04 20:17:46
+INFO:Start dictionary_merge()
+INFO:Result:	484.30183815956116 seconds
+
+INFO:2023-05-04 20:17:46
+INFO:Start read_dictionary_values()
+INFO:Result:	528.6309788227081 seconds
+
+INFO:2023-05-04 20:18:30
+INFO:Start dictionary_comprehension()
+INFO:Result:	528.8925726413727 seconds
+
+INFO:2023-05-04 20:18:30
+INFO:Start dictionary_insert()
+INFO:Result:	529.6481626033783 seconds
+
+INFO:2023-05-04 20:18:31
+INFO:Start dictionary_merge()
+INFO:Result:	529.7759885787964 seconds
+
+INFO:2023-05-04 20:18:31
+INFO:Start read_dictionary_values()
+INFO:Result:	572.814061164856 seconds
+
+INFO:2023-05-04 20:19:14
+INFO:Start dictionary_comprehension()
+INFO:Result:	573.0928289890289 seconds
+
+INFO:2023-05-04 20:19:15
+INFO:Start dictionary_insert()
+INFO:Result:	573.8389873504639 seconds
+
+INFO:2023-05-04 20:19:15
+INFO:Start dictionary_merge()
+INFO:Result:	573.9670650959015 seconds
+
+INFO:2023-05-04 20:19:15
+INFO:Start read_dictionary_values()
+INFO:Result:	617.0985345840454 seconds
+
+INFO:2023-05-04 20:19:59
+INFO:Start dictionary_comprehension()
+INFO:Result:	617.3209779262543 seconds
+
+INFO:2023-05-04 20:19:59
+INFO:Start dictionary_insert()
+INFO:Result:	618.0319375991821 seconds
+
+INFO:2023-05-04 20:19:59
+INFO:Start dictionary_merge()
+INFO:Result:	618.1709623336792 seconds
+
+INFO:2023-05-04 20:20:00
+INFO:Start read_dictionary_values()
+INFO:Result:	661.7586307525635 seconds
+
+INFO:2023-05-04 20:20:43
+INFO:Start dictionary_comprehension()
+INFO:Result:	662.0258388519287 seconds
+
+INFO:2023-05-04 20:20:43
+INFO:Start dictionary_insert()
+INFO:Result:	662.8062584400177 seconds
+
+INFO:2023-05-04 20:20:44
+INFO:Start dictionary_merge()
+INFO:Result:	662.9341585636139 seconds
+
+INFO:2023-05-04 20:20:44
+INFO:Start read_dictionary_values()
+INFO:Result:	704.2925934791565 seconds
+
+INFO:2023-05-04 20:21:26
+INFO:Start dictionary_comprehension()
+INFO:Result:	704.6040585041046 seconds
+
+INFO:2023-05-04 20:21:26
+INFO:Start dictionary_insert()
+INFO:Result:	705.3397057056427 seconds
+
+INFO:2023-05-04 20:21:27
+INFO:Start dictionary_merge()
+INFO:Result:	705.4657044410706 seconds
+
+INFO:2023-05-04 20:21:27
+INFO:Start read_dictionary_values()
+INFO:Result:	750.0376808643341 seconds
+
+INFO:2023-05-04 20:22:11
+INFO:Start dictionary_comprehension()
+INFO:Result:	750.2946290969849 seconds
+
+INFO:2023-05-04 20:22:12
+INFO:Start dictionary_insert()
+INFO:Result:	751.1247692108154 seconds
+
+INFO:2023-05-04 20:22:13
+INFO:Start dictionary_merge()
+INFO:Result:	751.2859210968018 seconds
+
+INFO:2023-05-04 20:22:13
+INFO:Start read_dictionary_values()
+INFO:Result:	793.3463382720947 seconds
+
+INFO:2023-05-04 20:22:55
+INFO:Start dictionary_comprehension()
+INFO:Result:	793.5941951274872 seconds
+
+INFO:2023-05-04 20:22:55
+INFO:Start dictionary_insert()
+INFO:Result:	794.3859355449677 seconds
+
+INFO:2023-05-04 20:22:56
+INFO:Start dictionary_merge()
+INFO:Result:	794.5169868469238 seconds
+
+INFO:2023-05-04 20:22:56
+INFO:Start read_dictionary_values()
+INFO:Result:	846.9123003482819 seconds
+
+INFO:2023-05-04 20:23:48
+INFO:Start dictionary_comprehension()
+INFO:Result:	847.1774563789368 seconds
+
+INFO:2023-05-04 20:23:49
+INFO:Start dictionary_insert()
+INFO:Result:	847.9247760772705 seconds
+
+INFO:2023-05-04 20:23:49
+INFO:Start dictionary_merge()
+INFO:Result:	848.0600044727325 seconds
+
+INFO:2023-05-04 20:23:49
+INFO:Start read_dictionary_values()
+INFO:Result:	893.5553896427155 seconds
+
+INFO:2023-05-04 20:24:35
+INFO:Start dictionary_comprehension()
+INFO:Result:	893.7933537960052 seconds
+
+INFO:2023-05-04 20:24:35
+INFO:Start dictionary_insert()
+INFO:Result:	894.617936372757 seconds
+
+INFO:2023-05-04 20:24:36
+INFO:Start dictionary_merge()
+INFO:Result:	894.7596786022186 seconds
+
+INFO:2023-05-04 20:24:36
+INFO:Start read_dictionary_values()
+INFO:Result:	937.1371474266052 seconds
+
+INFO:2023-05-04 20:25:19
+INFO:Start dictionary_comprehension()
+INFO:Result:	937.418078660965 seconds
+
+INFO:2023-05-04 20:25:19
+INFO:Start dictionary_insert()
+INFO:Result:	938.2306673526764 seconds
+
+INFO:2023-05-04 20:25:20
+INFO:Start dictionary_merge()
+INFO:Result:	938.3586795330048 seconds
+
+INFO:2023-05-04 20:25:20
+INFO:Start read_dictionary_values()
+INFO:Result:	996.2761158943176 seconds
+
+INFO:2023-05-04 20:26:18
+INFO:Start dictionary_comprehension()
+INFO:Result:	996.5827994346619 seconds
+
+INFO:2023-05-04 20:26:18
+INFO:Start dictionary_insert()
+INFO:Result:	997.3331644535065 seconds
+
+INFO:2023-05-04 20:26:19
+INFO:Start dictionary_merge()
+INFO:Result:	997.4568555355072 seconds
+
+INFO:2023-05-04 20:26:19
+INFO:Start read_dictionary_values()
+INFO:Result:	1048.9797031879425 seconds
+
+INFO:2023-05-04 20:27:10
+INFO:Start dictionary_comprehension()
+INFO:Result:	1049.2980391979218 seconds
+
+INFO:2023-05-04 20:27:11
+INFO:Start dictionary_insert()
+INFO:Result:	1050.7244720458984 seconds
+
+INFO:2023-05-04 20:27:12
+INFO:Start dictionary_merge()
+INFO:Result:	1050.8892650604248 seconds
+
+INFO:2023-05-04 20:27:12
+INFO:Start read_dictionary_values()
+INFO:Result:	1097.76638174057 seconds
+
+INFO:2023-05-04 20:27:59
+INFO:Start dictionary_comprehension()
+INFO:Result:	1097.9962134361267 seconds
+
+INFO:2023-05-04 20:27:59
+INFO:Start dictionary_insert()
+INFO:Result:	1098.7636291980743 seconds
+
+INFO:2023-05-04 20:28:00
+INFO:Start dictionary_merge()
+INFO:Result:	1098.8861367702484 seconds
+
+INFO:2023-05-04 20:28:00
+INFO:Start read_dictionary_values()
+INFO:Result:	1143.338499546051 seconds
+
+INFO:2023-05-04 20:28:45
+INFO:Start dictionary_comprehension()
+INFO:Result:	1143.6662817001343 seconds
+
+INFO:2023-05-04 20:28:45
+INFO:Start dictionary_insert()
+INFO:Result:	1144.3959481716156 seconds
+
+INFO:2023-05-04 20:28:46
+INFO:Start dictionary_merge()
+INFO:Result:	1144.5179443359375 seconds
+
+INFO:2023-05-04 20:28:46
+INFO:Start read_dictionary_values()
+INFO:Result:	1186.3104078769684 seconds
+
+INFO:2023-05-04 20:29:28
+INFO:Start dictionary_comprehension()
+INFO:Result:	1186.537596464157 seconds
+
+INFO:2023-05-04 20:29:28
+INFO:Start dictionary_insert()
+INFO:Result:	1187.2330515384674 seconds
+
+INFO:2023-05-04 20:29:29
+INFO:Start dictionary_merge()
+INFO:Result:	1187.375548362732 seconds
+
+INFO:2023-05-04 20:29:29
+INFO:Start read_dictionary_values()
+INFO:Result:	1232.0061392784119 seconds
+
+INFO:2023-05-04 20:30:13
+INFO:Start dictionary_comprehension()
+INFO:Result:	1232.243438243866 seconds
+
+INFO:2023-05-04 20:30:14
+INFO:Start dictionary_insert()
+INFO:Result:	1233.0067114830017 seconds
+
+INFO:2023-05-04 20:30:14
+INFO:Start dictionary_merge()
+INFO:Result:	1233.136557817459 seconds
+
+INFO:2023-05-04 20:30:15
+INFO:Start read_dictionary_values()
+INFO:Result:	1277.8633847236633 seconds
+
+INFO:2023-05-04 20:30:59
+INFO:Start dictionary_comprehension()
+INFO:Result:	1278.1255466938019 seconds
+
+INFO:2023-05-04 20:31:00
+INFO:Start dictionary_insert()
+INFO:Result:	1278.8825843334198 seconds
+
+INFO:2023-05-04 20:31:00
+INFO:Start dictionary_merge()
+INFO:Result:	1279.0070877075195 seconds
+
+INFO:2023-05-04 20:31:00
+INFO:Start read_dictionary_values()
+INFO:Result:	1319.1680030822754 seconds
+
+INFO:2023-05-04 20:31:41
+INFO:Start dictionary_comprehension()
+INFO:Result:	1319.4201407432556 seconds
+
+INFO:2023-05-04 20:31:41
+INFO:Start dictionary_insert()
+INFO:Result:	1320.129028558731 seconds
+
+INFO:2023-05-04 20:31:42
+INFO:Start dictionary_merge()
+INFO:Result:	1320.2502415180206 seconds
+
+INFO:2023-05-04 20:31:42
+INFO:Start read_dictionary_values()
+INFO:Result:	1363.3548305034637 seconds
+
+INFO:2023-05-04 20:32:25
+INFO:Start dictionary_comprehension()
+INFO:Result:	1363.5929844379425 seconds
+
+INFO:2023-05-04 20:32:25
+INFO:Start dictionary_insert()
+INFO:Result:	1364.3210880756378 seconds
+
+INFO:2023-05-04 20:32:26
+INFO:Start dictionary_merge()
+INFO:Result:	1364.5350818634033 seconds
+
+INFO:2023-05-04 20:32:26
+INFO:Start read_dictionary_values()
+INFO:Result:	1408.9549796581268 seconds
+
+INFO:2023-05-04 20:33:10
+INFO:Start dictionary_comprehension()
+INFO:Result:	1409.2242951393127 seconds
+
+INFO:2023-05-04 20:33:11
+INFO:Start dictionary_insert()
+INFO:Result:	1409.992714881897 seconds
+
+INFO:2023-05-04 20:33:11
+INFO:Start dictionary_merge()
+INFO:Result:	1410.1172711849213 seconds
+
+INFO:2023-05-04 20:33:12
+INFO:Start read_dictionary_values()
+INFO:Result:	1455.7956891059875 seconds
+
+INFO:2023-05-04 20:33:57
+INFO:Start dictionary_comprehension()
+INFO:Result:	1456.2996649742126 seconds
+
+INFO:2023-05-04 20:33:58
+INFO:Start dictionary_insert()
+INFO:Result:	1457.3031108379364 seconds
+
+INFO:2023-05-04 20:33:59
+INFO:Start dictionary_merge()
+INFO:Result:	1457.4406929016113 seconds
+
+INFO:2023-05-04 20:33:59
+INFO:Start read_dictionary_values()
+INFO:Result:	1474.7210471630096 seconds
+
+INFO:2023-05-04 20:34:16
+INFO:Start dictionary_comprehension()
+INFO:Result:	1474.9720804691315 seconds
+
+INFO:2023-05-04 20:34:16
+INFO:Start dictionary_insert()
+INFO:Result:	1475.7672364711761 seconds
+
+INFO:2023-05-04 20:34:17
+INFO:Start dictionary_merge()
+INFO:Result:	1475.9379155635834 seconds
+
+INFO:2023-05-04 20:34:17
+INFO:Start read_dictionary_values()
+INFO:Result:	1526.068826675415 seconds
+
+INFO:2023-05-04 20:35:07
+INFO:Start dictionary_comprehension()
+INFO:Result:	1526.4076249599457 seconds
+
+INFO:2023-05-04 20:35:08
+INFO:Start dictionary_insert()
+INFO:Result:	1527.1896386146545 seconds
+
+INFO:2023-05-04 20:35:09
+INFO:Start dictionary_merge()
+INFO:Result:	1527.360046863556 seconds
+
+INFO:2023-05-04 20:35:09
+INFO:Start read_dictionary_values()
+INFO:Result:	1571.0285181999207 seconds
+
+INFO:2023-05-04 20:35:52
+INFO:Start dictionary_comprehension()
+INFO:Result:	1571.2325291633606 seconds
+
+INFO:2023-05-04 20:35:53
+INFO:Start dictionary_insert()
+INFO:Result:	1572.0220022201538 seconds
+
+INFO:2023-05-04 20:35:54
+INFO:Start dictionary_merge()
+INFO:Result:	1572.1801488399506 seconds
+
+INFO:2023-05-04 20:35:54
+INFO:Start read_dictionary_values()
+INFO:Result:	1575.1075665950775 seconds
+
+INFO:2023-05-04 20:35:57
+INFO:Start dictionary_comprehension()
+INFO:Result:	1575.3138356208801 seconds
+
+INFO:Total time elapsed for dictionary test cases:	1575.3086087703705 seconds
+
+INFO:2023-05-04 20:35:57
+INFO:Writing dictionary results to csv
+INFO:dictionary done!
+
