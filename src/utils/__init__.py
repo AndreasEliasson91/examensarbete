@@ -62,6 +62,7 @@ def range_sequence(start, stop, step):
 
 # def write_to_csv(datatype: str, results: list) -> None:
 def write_to_csv(datatype, results):
+
     logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     logging.info('Writing %s results to csv\n', datatype)
     # with open(f'c:/code/projects/master-thesis/doc/results/{datatype}_results.csv', 'a') as csv_file:
