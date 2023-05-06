@@ -32,7 +32,7 @@ def run(version):
         
         logging.info('FINALIZING LIST TEST CASES')
     logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
-    utils.write_to_csv('list', results)
+    # utils.write_to_csv('list', results)
 
 # def list_comprehension(amount: int) -> float:
 def list_comprehension(amount):

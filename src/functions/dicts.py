@@ -49,7 +49,7 @@ def run(version):
         logging.info('FINALIZING DICTIONARY TEST CASES')
     logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
 
-    utils.write_to_csv('dictionary', results)
+    # utils.write_to_csv('dictionary', results)
 
 
 

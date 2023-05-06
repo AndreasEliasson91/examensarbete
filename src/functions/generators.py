@@ -26,7 +26,7 @@ def run(version):
         
         logging.info('FINALIZING GENERATOR TEST CASES')
     logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
-    utils.write_to_csv('generator', results)
+    # utils.write_to_csv('generator', results)
 
 # def generate_generator(values: list) -> Any:
 def generate_generator(values):

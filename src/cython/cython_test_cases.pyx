@@ -138,6 +138,15 @@ cdef float list_append(list values):
         for val in values:
             list_append(val)
     
+    with timer:
+        logging.info('generator()')
+
+        while running:
+            for _ in generate_generator(amount):
+                pass
+            running = False
+
+    logging.info('Result:\t%s seconds\n', timer.runtime)
     return timer.runtime
 
 cdef float list_sort(list list_):

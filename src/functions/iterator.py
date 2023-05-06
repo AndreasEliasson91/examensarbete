@@ -33,7 +33,7 @@ def run(version):
 
         logging.info('FINALIZING ITERATOR TEST CASES')
     logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
-    utils.write_to_csv('iterator', results)
+    # utils.write_to_csv('iterator', results)
 
 # def iteration_test(iterable: iter) -> float:
 def iteration_test(iterable):

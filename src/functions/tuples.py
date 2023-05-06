@@ -29,7 +29,7 @@ def run(version):
             results.append(['tuple_sort', AMOUNT, tuple_sort(sort_tuple), version])
         logging.info('FINALIZING SET TEST CASES')
     logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
-    utils.write_to_csv('tuple', results)
+    # utils.write_to_csv('tuple', results)
 
 # def tuple_append(values: list) -> float:
 def tuple_append(values):
