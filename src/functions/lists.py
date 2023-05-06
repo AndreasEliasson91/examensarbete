@@ -6,8 +6,8 @@ import utils
 from utils import Timer
 
 random.seed(42)
-AMOUNT = 1000000
-NUM_ROUNDS = 10
+AMOUNT = 10000000
+NUM_ROUNDS = 100
 
 # def run(version: str):
 def run(version):
@@ -33,7 +33,7 @@ def run(version):
         
         logging.info('FINALIZING LIST TEST CASES')
     logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
-    utils.write_to_csv('list', results)
+    # utils.write_to_csv('list', results)
 
 # def list_comprehension(amount: int) -> float:
 def list_comprehension(amount):

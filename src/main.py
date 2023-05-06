@@ -83,20 +83,17 @@ def main(argv):
         
 
 if __name__ == '__main__':
-    # if PROFILING:
-    #     filename = '-'.join(VERSION.split('.'))
+    filename = '-'.join(VERSION.split('.'))
 
-    #     profiler = cProfile.Profile()
-    #     profiler.enable()
+    profiler = cProfile.Profile()
+    profiler.enable()
 
-    #     main(sys.argv[1:])
-
-    #     profiler.disable()
-
-    #     stats = pstats.Stats(profiler).sort_stats('cumtime')
-    #     stats.strip_dirs()
-
-    #     stats.print_stats()
-    #     stats.dump_stats('C:/code/projects/master-thesis/doc/results/cprofile/{0}.txt'.format(filename))
-    # else:
     main(sys.argv[1:])
+
+    profiler.disable()
+
+    with open('C:/code/projects/master-thesis/doc/results/cprofile/{0}.txt'.format(filename), 'w') as f:
+        stats = pstats.Stats(profiler).sort_stats('cumtime')
+        stats.strip_dirs()
+        stats.print_stats()
+    # main(sys.argv[1:])

@@ -6,8 +6,8 @@ import utils
 from utils import Timer
 
 random.seed(42)
-AMOUNT = 100000
-NUM_ROUNDS = 10
+AMOUNT = 1000000
+NUM_ROUNDS = 100
 
 # def run(version: str):
 def run(version):
@@ -30,7 +30,7 @@ def run(version):
             results.append([date_time, 'tuple_sort', AMOUNT, tuple_sort(sort_tuple), version])
         logging.info('FINALIZING SET TEST CASES')
     logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
-    utils.write_to_csv('tuple', results)
+    # utils.write_to_csv('tuple', results)
 
 # def tuple_append(values: list) -> float:
 def tuple_append(values):

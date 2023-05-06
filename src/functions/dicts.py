@@ -8,8 +8,8 @@ import utils
 from utils import Timer
 
 random.seed(42)
-AMOUNT = 1000000
-NUM_ROUNDS = 10
+AMOUNT = 10000000
+NUM_ROUNDS = 100
 
 # def get_dict_keys(amount: int) -> list:
 def get_dict_keys(amount):
@@ -50,7 +50,7 @@ def run(version):
         logging.info('FINALIZING DICTIONARY TEST CASES')
     logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
 
-    utils.write_to_csv('dictionary', results)
+    # utils.write_to_csv('dictionary', results)
 
 
 

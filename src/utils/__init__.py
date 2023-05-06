@@ -55,7 +55,7 @@ def write_to_csv(datatype, results):
     logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     logging.info('Writing %s results to csv', datatype)
     # with open(f'c:/code/projects/master-thesis/doc/results/{datatype}_results.csv', 'a') as csv_file:
-    with open('c:/code/projects/master-thesis/doc/results/{0}_results.csv'.format(datatype), 'a') as csv_file:
+    with open('c:/code/projects/master-thesis/doc/results/{0}_results_100.csv'.format(datatype), 'a') as csv_file:
         writer = csv.writer(csv_file, delimiter=',', lineterminator='\n')
         for line in results:
             writer.writerow(line)

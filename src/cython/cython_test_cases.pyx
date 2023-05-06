@@ -5,8 +5,8 @@ from datetime import datetime
 import utils
 from utils import Timer
 
-AMOUNT = 1000000
-NUM_ROUNDS = 10
+AMOUNT = 10000000
+NUM_ROUNDS = 100
 
 cdef extern from "Python.h":
     void Py_INCREF(PyObject *)
@@ -24,7 +24,6 @@ def list_comprehension(long n) -> float:
         list_ = [i for i in range(n)]
 
     logging.info('Result:\t%s seconds\n', timer.runtime)
-    
     return timer.runtime
         
 
@@ -41,8 +40,32 @@ def list_iterator(long n):
             PyList_SET_ITEM(T, i, PyInt_FromLong(i))
 
     logging.info('Result:\t%s seconds\n', timer.runtime)
-    
     return timer.runtime
+
+def generate_generator(long amount):
+    cdef long i
+    for i in range(amount):
+        yield(i)
+
+def generator(long amount):
+    logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+    cdef long i
+    running = True
+    timer = Timer()
+    
+    with timer:
+        logging.info('generator()')
+
+        while running:
+            for _ in generate_generator(amount):
+                pass
+            running = False
+
+    logging.info('Result:\t%s seconds\n', timer.runtime)
+    return timer.runtime
+
+
+
 
 
 def cython_run() -> None:
@@ -56,8 +79,9 @@ def cython_run() -> None:
             date_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
             logging.info('Round %s of %s\n', str(i+1), str(NUM_ROUNDS))
-            results.append([date_time, f'list_comprehension_{str(i+1)}', AMOUNT, list_comprehension(AMOUNT), 'Cython'])
-            results.append([date_time, f'list_iterator_{str(i+1)}', AMOUNT, list_iterator(AMOUNT), 'Cython'])
+            results.append([date_time, 'list_comprehension', AMOUNT, list_comprehension(AMOUNT), 'Cython'])
+            results.append([date_time, 'list_iterator', AMOUNT, list_iterator(AMOUNT), 'Cython'])
+            results.append([date_time, 'generator', AMOUNT, generator(AMOUNT), 'Cython'])
 
 
         logging.info('FINALIZING CYTHON TEST CASES')
