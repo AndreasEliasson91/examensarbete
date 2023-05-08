@@ -6,3 +6,4 @@ venv*
 *.pyd
 build
 .vscode
+*.json
