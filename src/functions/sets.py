@@ -21,27 +21,23 @@ def run(version):
     logging.info('START SET TEST CASES FOR V. %s\n', version)
     with total_timer:
         for i in range(NUM_ROUNDS):
-            date_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
             logging.info('Round %s of %s\n', str(i+1), str(NUM_ROUNDS))
                 # f'set_merge_{str(i+1)}',
-            results.append([date_time, 'set_merge', AMOUNT, set_merge(set_one, set_two), version])
+            results.append(['set_merge', AMOUNT, set_merge(set_one, set_two), version])
         
         logging.info('FINALIZING SET TEST CASES')
     logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
-    # utils.write_to_csv('set', results)
+    utils.write_to_csv('set', results)
 
 
 # def set_merge(set_one: set, set_two: set) -> float:
 def set_merge(set_one, set_two):
-    logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     timer = Timer()
 
     with timer:
-        logging.info('set_merge()')
         set_one.update(set_two)
 
-    logging.info('Result:\t%s seconds\n', timer.runtime)
 
     utils.devnull(set_one)
     return timer.runtime
