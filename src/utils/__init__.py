@@ -1,7 +1,13 @@
 import os
 import sys
+
+import csv
+import json
 import logging
+import random
+import string
 import time
+
 from datetime import datetime
 
 # from typing import Any
@@ -40,6 +46,12 @@ def devnull(x):
 
     sys.stdout = stdout
 
+def generate_dict_keys(amount: int) -> None:
+    strings = [''.join(random.choices(string.ascii_letters, k=10)) for _ in range(amount)]
+
+    with open(f'src/data/json/{amount}_dict_keys.json', 'w', encoding='utf-8') as f:
+        json.dump(strings, f)
+
 # def range_sequence(start: int, stop: int, step: int) -> list:
 def range_sequence(start, stop, step):
     result = list(zip(range(start, stop, step), range(start+step, stop, step)))
@@ -50,12 +62,10 @@ def range_sequence(start, stop, step):
 
 # def write_to_csv(datatype: str, results: list) -> None:
 def write_to_csv(datatype, results):
-    import csv
-
     logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     logging.info('Writing %s results to csv\n', datatype)
     # with open(f'c:/code/projects/master-thesis/doc/results/{datatype}_results.csv', 'a') as csv_file:
-    with open('c:/code/projects/master-thesis/doc/results/{0}_results_100.csv'.format(datatype), 'a') as csv_file:
+    with open('c:/code/projects/master-thesis/doc/results/{0}_results_100.csv'.format(datatype), 'a', encoding='utf-8') as csv_file:
         writer = csv.writer(csv_file, delimiter=',', lineterminator='\n')
         for line in results:
             writer.writerow(line)
