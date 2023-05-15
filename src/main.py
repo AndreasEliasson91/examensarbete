@@ -92,7 +92,7 @@ if __name__ == '__main__':
 
     profiler.disable()
 
-    with open('C:/code/projects/master-thesis/doc/results/cprofile/{0}.txt'.format(filename), 'w') as f:
+    with open('C:/code/projects/master-thesis/doc/results/cprofile/{0}.txt'.format(filename), 'w', encoding='utf-8') as f:
         stats = pstats.Stats(profiler).sort_stats('cumtime')
         stats.strip_dirs()
         stats.print_stats()

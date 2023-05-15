@@ -7,7 +7,7 @@ from utils import Timer
 
 random.seed(42)
 AMOUNT = 10000000
-NUM_ROUNDS = 100
+NUM_ROUNDS = 10
 
 # def run(version: str):
 def run(version):

@@ -6,8 +6,8 @@ import utils
 from utils import Timer
 
 random.seed(42)
-AMOUNT = 1000000
-NUM_ROUNDS = 100
+AMOUNT = 10000000
+NUM_ROUNDS = 10
 
 # def run(version: str):
 def run(version):
@@ -24,7 +24,7 @@ def run(version):
             logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
             logging.info('Round %s of %s\n', str(i+1), str(NUM_ROUNDS))
             # results.append([f'tuple_append_{str(i+1)}', tuple_append(append_tuple), version])
-            # results.append([date_time, 'tuple_append', AMOUNT, tuple_append(append_tuple), version])
+            results.append(['tuple_append', AMOUNT, tuple_append(append_tuple), version])
             # results.append([f'tuple_sort_{str(amount)}', tuple_sort(sort_tuple), version])
             results.append(['tuple_sort', AMOUNT, tuple_sort(sort_tuple), version])
         logging.info('FINALIZING SET TEST CASES')

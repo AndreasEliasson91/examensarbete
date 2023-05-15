@@ -5,7 +5,7 @@ import utils
 from utils import Timer
 
 AMOUNT = 10000000
-NUM_ROUNDS = 100
+NUM_ROUNDS = 10
 
 # def run(version: str):
 def run(version):
