@@ -9,7 +9,6 @@ random.seed(42)
 AMOUNT = 10000000
 NUM_ROUNDS = 100
 
-# def run(version: str):
 def run(version):
     total_timer = Timer()
     results = list()
@@ -23,18 +22,15 @@ def run(version):
         for i in range(NUM_ROUNDS):
             logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
             logging.info('Round %s of %s\n', str(i+1), str(NUM_ROUNDS))
-            # results.append([f'list_comprehension_{str(i+1)}', list_comprehension(AMOUNT), version])
+
             results.append(['list_comprehension', AMOUNT, list_comprehension(AMOUNT), version])
-            # results.append([f'list_append_{str(i+1)}', list_append(append_list), version])
             results.append(['list_append', AMOUNT, list_append(append_list), version])
-            # results.append([f'list_sort_{str(i+1)}', list_sort(sort_list), version])
             results.append(['list_sort', AMOUNT, list_sort(sort_list), version])
         
         logging.info('FINALIZING LIST TEST CASES')
     logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
-    # utils.write_to_csv('list', results)
+    utils.write_to_csv('list', results)
 
-# def list_comprehension(amount: int) -> float:
 def list_comprehension(amount):
     timer = Timer()
 
@@ -44,7 +40,6 @@ def list_comprehension(amount):
     utils.devnull(list_)
     return timer.runtime
 
-# def list_append(values: list) -> float:
 def list_append(values):
     timer = Timer()
 
@@ -57,8 +52,6 @@ def list_append(values):
     utils.devnull(list_)
     return timer.runtime
 
-
-# def list_sort(list_: list) -> float:
 def list_sort(list_):
     timer = Timer()
 

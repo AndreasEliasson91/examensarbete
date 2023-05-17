@@ -9,7 +9,6 @@ random.seed(42)
 AMOUNT = 10000000
 NUM_ROUNDS = 100
 
-# def run(version: str):
 def run(version):
     total_timer = Timer()
     results = list()
@@ -23,21 +22,18 @@ def run(version):
         for i in range(NUM_ROUNDS):
             logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
             logging.info('Round %s of %s\n', str(i+1), str(NUM_ROUNDS))
-                # f'set_merge_{str(i+1)}',
+
             results.append(['set_merge', AMOUNT, set_merge(set_one, set_two), version])
         
         logging.info('FINALIZING SET TEST CASES')
     logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
-    # utils.write_to_csv('set', results)
+    utils.write_to_csv('set', results)
 
-
-# def set_merge(set_one: set, set_two: set) -> float:
 def set_merge(set_one, set_two):
     timer = Timer()
 
     with timer:
         set_one.update(set_two)
-
 
     utils.devnull(set_one)
     return timer.runtime

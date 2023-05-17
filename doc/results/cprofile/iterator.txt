@@ -1,0 +1,85 @@
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       24    0.000    0.000    0.000    0.000 cp1252.py:18(encode)
+        2    0.000    0.000    0.013    0.006 abc.py:117(__instancecheck__)
+     22/2    0.000    0.000    0.011    0.006 abc.py:121(__subclasscheck__)
+       24    0.000    0.000    0.000    0.000 ntpath.py:34(_get_bothseps)
+       48    0.000    0.000    0.001    0.000 ntpath.py:44(normcase)
+       24    0.000    0.000    0.000    0.000 ntpath.py:124(splitdrive)
+       24    0.001    0.000    0.001    0.000 ntpath.py:180(split)
+       24    0.000    0.000    0.000    0.000 ntpath.py:203(splitext)
+       24    0.000    0.000    0.001    0.000 ntpath.py:214(basename)
+       22    0.000    0.000    0.000    0.000 _collections_abc.py:409(__subclasshook__)
+       24    0.000    0.000    0.000    0.000 genericpath.py:121(_splitext)
+       24    0.001    0.000    0.001    0.000 __init__.py:119(getLevelName)
+       24    0.000    0.000    0.000    0.000 __init__.py:160(<lambda>)
+        1    0.001    0.001    0.001    0.001 __init__.py:219(_acquireLock)
+        1    0.000    0.000    0.000    0.000 __init__.py:228(_releaseLock)
+       24    0.009    0.000    0.028    0.001 __init__.py:283(__init__)
+       24    0.000    0.000    0.000    0.000 __init__.py:359(getMessage)
+       24    0.000    0.000    0.000    0.000 __init__.py:423(usesTime)
+       24    0.000    0.000    0.000    0.000 __init__.py:431(_format)
+       24    0.000    0.000    0.000    0.000 __init__.py:438(format)
+       24    0.001    0.000    0.001    0.000 __init__.py:643(usesTime)
+       24    0.000    0.000    0.000    0.000 __init__.py:649(formatMessage)
+       24    0.000    0.000    0.001    0.000 __init__.py:665(format)
+       48    0.000    0.000    0.000    0.000 __init__.py:806(filter)
+       48    0.000    0.000    0.001    0.000 __init__.py:912(acquire)
+       48    0.000    0.000    0.000    0.000 __init__.py:919(release)
+       24    0.000    0.000    0.001    0.000 __init__.py:932(format)
+       24    0.001    0.000    0.007    0.000 __init__.py:955(handle)
+       24    0.000    0.000    0.001    0.000 __init__.py:1077(flush)
+       24    0.001    0.000    0.005    0.000 __init__.py:1088(emit)
+       24    0.000    0.000    0.005    0.000 __init__.py:1204(emit)
+        1    0.000    0.000    0.000    0.000 __init__.py:1307(disable)
+       24    0.002    0.000    0.048    0.002 __init__.py:1467(info)
+       24    0.003    0.000    0.004    0.000 __init__.py:1549(findCaller)
+       24    0.002    0.000    0.030    0.001 __init__.py:1585(makeRecord)
+       24    0.001    0.000    0.043    0.002 __init__.py:1600(_log)
+       24    0.000    0.000    0.008    0.000 __init__.py:1626(handle)
+       24    0.001    0.000    0.008    0.000 __init__.py:1680(callHandlers)
+        1    0.000    0.000    0.000    0.000 __init__.py:1710(getEffectiveLevel)
+       24    0.003    0.000    0.003    0.000 __init__.py:1724(isEnabledFor)
+       24    0.002    0.000    0.050    0.002 __init__.py:2130(info)
+       24    0.000    0.000    0.000    0.000 threading.py:1129(name)
+       24    0.000    0.000    0.000    0.000 threading.py:1430(current_thread)
+       24    0.001    0.000    0.001    0.000 process.py:37(current_process)
+       24    0.000    0.000    0.000    0.000 process.py:189(name)
+        1    0.000    0.000    0.000    0.000 getopt.py:56(getopt)
+        1    0.000    0.000    0.000    0.000 getopt.py:192(do_shorts)
+        1    0.000    0.000    0.000    0.000 getopt.py:207(short_has_arg)
+        1    0.439    0.439   28.077   28.077 main.py:33(main)
+ 10000001    2.474    0.000    2.474    0.000 iterator.py:15(<genexpr>)
+       31    0.001    0.000    0.001    0.000 __init__.py:18(__init__)
+       31    0.000    0.000    0.000    0.000 __init__.py:22(__enter__)
+       31    0.000    0.000    0.000    0.000 __init__.py:25(__exit__)
+ 10000001    3.100    0.000    3.100    0.000 iterator.py:16(<genexpr>)
+        1    9.079    9.079   27.638   27.638 iterator.py:11(run)
+       30   10.756    0.359   10.757    0.359 iterator.py:39(iteration_test)
+ 10000001    2.168    0.000    2.168    0.000 iterator.py:17(<genexpr>)
+        2    0.001    0.001    0.013    0.006 {built-in method _abc._abc_instancecheck}
+     22/2    0.011    0.001    0.011    0.006 {built-in method _abc._abc_subclasscheck}
+       24    0.000    0.000    0.000    0.000 {built-in method _codecs.charmap_encode}
+       11    0.001    0.000    0.001    0.000 {built-in method now}
+       11    0.008    0.001    0.008    0.001 {method 'strftime' of 'datetime.date' objects}
+       24    0.000    0.000    0.000    0.000 {built-in method nt.getpid}
+      120    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
+       49    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+       49    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
+       48    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+       86    0.000    0.000    0.000    0.000 {built-in method time.time}
+       24    0.001    0.000    0.001    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+       24    0.001    0.000    0.001    0.000 {method 'flush' of '_io.TextIOWrapper' objects}
+       48    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+       31    0.001    0.000    0.001    0.000 {method 'append' of 'list' objects}
+       72    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+       24    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+       48    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+       72    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+       24    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+       96    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+      122    0.001    0.000    0.013    0.000 {built-in method builtins.isinstance}
+       86    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       24    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+       24    0.000    0.000    0.000    0.000 {built-in method sys._getframe}
+        1    0.001    0.001    0.001    0.001 {method 'disable' of '_lsprof.Profiler' objects}

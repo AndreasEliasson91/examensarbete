@@ -10,11 +10,8 @@ import time
 
 from datetime import datetime
 
-# from typing import Any
-
 
 class Timer():
-    # def __init__(self) -> None:
     def __init__(self):
         self.start = time.time()
         self.runtime = None
@@ -28,10 +25,9 @@ class Timer():
         return self.runtime
 
 
-# def devnull(x: Any) -> None:
 def devnull(x):
     """
-    Po print to devnull.
+    Print to devnull.
     Used to prevent results from potentially being removed in optimization
     """
     stdout = sys.stdout
@@ -52,7 +48,6 @@ def generate_dict_keys(amount: int) -> None:
     with open(f'src/data/json/{amount}_dict_keys.json', 'w', encoding='utf-8') as f:
         json.dump(strings, f)
 
-# def range_sequence(start: int, stop: int, step: int) -> list:
 def range_sequence(start, stop, step):
     result = list(zip(range(start, stop, step), range(start+step, stop, step)))
     if (stop - start) % step != 0:
@@ -60,12 +55,11 @@ def range_sequence(start, stop, step):
         result.append((last_fst_elem, stop))
     return result
 
-# def write_to_csv(datatype: str, results: list) -> None:
 def write_to_csv(datatype, results):
     logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     logging.info('Writing %s results to csv\n', datatype)
-    # with open(f'c:/code/projects/master-thesis/doc/results/{datatype}_results.csv', 'a') as csv_file:
-    with open('c:/code/projects/master-thesis/doc/results/{0}_results_100.csv'.format(datatype), 'a', encoding='utf-8') as csv_file:
+
+    with open('../doc/results/timer/{0}_results_100.csv'.format(datatype), 'a', encoding='utf-8') as csv_file:
         writer = csv.writer(csv_file, delimiter=',', lineterminator='\n')
         for line in results:
             writer.writerow(line)

@@ -7,7 +7,6 @@ from utils import Timer
 AMOUNT = 10000000
 NUM_ROUNDS = 100
 
-# def run(version: str):
 def run(version):
     total_timer = Timer()
     results = list()
@@ -24,18 +23,14 @@ def run(version):
             logging.info(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
             logging.info('Round %s of %s\n', str(i+1), str(NUM_ROUNDS))
 
-            # results.append([f'iteration_test_set_{str(i+1)}', iteration_test(set_values), version])
             results.append(['iteration_test_set', AMOUNT, iteration_test(set_values), version])
-            # results.append([f'iteration_test_tuple_{str(i+1)}', iteration_test(tuple_values), version])
             results.append(['iteration_test_tuple', AMOUNT, iteration_test(tuple_values), version])
-            # results.append([f'iteration_test_list_{str(i+1)}', iteration_test(list_values), version])
             results.append(['iteration_test_list', AMOUNT, iteration_test(list_values), version])
 
         logging.info('FINALIZING ITERATOR TEST CASES')
     logging.info('Total time elapsed:\t%s seconds\n', total_timer.runtime)
-    # utils.write_to_csv('iterator', results)
+    utils.write_to_csv('iterator', results)
 
-# def iteration_test(iterable: iter) -> float:
 def iteration_test(iterable):
     timer = Timer()
     
