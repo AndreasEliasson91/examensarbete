@@ -51,8 +51,8 @@ std::vector<typename std::result_of<Operation(typename std::iterator_traits<Inpu
 
     return result;
 }
-std::vector<int> listAppend(std::vector<int> listOne, std::vector<int> listTwo) {
-    
+void listAppend(std::vector<int>& listOne, const std::vector<int>& listTwo) {
+    listOne.insert(listOne.end(), listTwo.begin(), listTwo.end());
 }
 void listSort(std::vector<int>& list) {
     std::sort(list.begin(), list.end());
