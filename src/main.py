@@ -6,30 +6,36 @@ import sys
 
 from datetime import datetime
 
-
- # TODO: Fix import of cython implementation
- 
-# from cython_test_cases import cython_run
-from functions import dicts
-from functions import generators
-from functions import iterator
-from functions import lists
-from functions import sets
-from functions import tuples
+from cython_test_cases import run_cython
+from functions import dicts, generators, iterator, lists, sets, tuples
 
 
 VERSION = platform.python_version()
+LOG_DIR = '../doc/logs/'
+LOG_FILE = 'test_cases.log'
 PROFILING = False
 
 logging.basicConfig(
     format='%(levelname)s:%(message)s',
     level=logging.INFO,
-    filename='c:/code/projects/master-thesis/doc/logs/test_cases.log'
+    filename=LOG_DIR + LOG_FILE
     # filename='c:/code/projects/master-thesis/doc/logs/log_book.log'
 )
 
+        
+def profiling(profiling_dir, profiling_file):
+    profiler = cProfile.Profile()
+    profiler.enable()
 
-# def main(argv: list) -> None:
+    main(sys.argv[1:])
+
+    profiler.disable()
+
+    with open(profiling_dir + profiling_file, 'w', encoding='utf-8') as out_file:
+        stats = pstats.Stats(profiler, stream=out_file).sort_stats('cumtime')
+        stats.strip_dirs()
+        stats.print_stats()
+
 def main(argv):
     if len(argv) < 1:
         logging.warning(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
@@ -75,25 +81,8 @@ def main(argv):
             sets.run(VERSION)
         elif opt in ['-t', '--tuple']:
             tuples.run(VERSION)
-#         # elif opt == '-c':
-#              # from cpp import cpp
-#              # cpp.run()
-        # elif opt == '--cython':
-        #     cython_run()
-        
+        elif opt == '--cython':
+            run_cython()
 
 if __name__ == '__main__':
-    filename = '-'.join(VERSION.split('.'))
-
-    profiler = cProfile.Profile()
-    profiler.enable()
-
     main(sys.argv[1:])
-
-    profiler.disable()
-
-    with open('C:/code/projects/master-thesis/doc/results/cprofile/{0}.txt'.format(filename), 'w', encoding='utf-8') as f:
-        stats = pstats.Stats(profiler).sort_stats('cumtime')
-        stats.strip_dirs()
-        stats.print_stats()
-    # main(sys.argv[1:])
